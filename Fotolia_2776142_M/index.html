@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Baseball Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Modern Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <span class="text-primary">BASEBALL</span>GALLERY
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Background Image and Search -->
+    <header class="hero-section text-white d-flex align-items-center">
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="display-3 fw-bold mb-4">The Art of the Game</h1>
+                    <p class="lead mb-5 opacity-75">Explore our exclusive collection of high-quality baseball photography and digital assets. Professional shots for your next project.</p>
+                    
+                    <!-- Modern Search Bar -->
+                    <div class="hero-search-wrapper mb-5">
+                        <div class="input-group input-group-lg shadow-lg overflow-hidden rounded-pill bg-white">
+                            <span class="input-group-text border-0 bg-white ps-4">
+                                <i class="bi bi-search text-muted"></i>
+                            </span>
+                            <input type="text" class="form-control border-0 shadow-none ps-2" placeholder="Search for action shots, equipment, stadiums...">
+                            <button class="btn btn-primary px-4 fw-semibold" type="button">Search</button>
+                        </div>
+                        <div class="mt-3 small opacity-75 d-none d-md-block">
+                            <span class="me-2">Trending:</span>
+                            <a href="#" class="text-white text-decoration-none me-2 border-bottom border-white border-opacity-25">Pitcher</a>
+                            <a href="#" class="text-white text-decoration-none me-2 border-bottom border-white border-opacity-25">Stadium</a>
+                            <a href="#" class="text-white text-decoration-none border-bottom border-white border-opacity-25">Home Run</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats/Features Bar -->
+    <section class="py-4 bg-white border-bottom">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-6 col-md-3">
+                    <div class="fw-bold h4 mb-0">15+</div>
+                    <div class="text-muted small text-uppercase">Images</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="fw-bold h4 mb-0">HD</div>
+                    <div class="text-muted small text-uppercase">Quality</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="fw-bold h4 mb-0">Free</div>
+                    <div class="text-muted small text-uppercase">To Use</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="fw-bold h4 mb-0">2026</div>
+                    <div class="text-muted small text-uppercase">Collection</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filter Bar -->
+    <section class="py-3 bg-light border-bottom sticky-top-filter">
+        <div class="container">
+            <div class="d-flex align-items-center overflow-auto no-scrollbar py-2">
+                <span class="text-muted small fw-bold text-uppercase me-4 d-none d-md-block">Categories</span>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-sm btn-primary rounded-pill px-3">All Assets</button>
+                    <button class="btn btn-sm btn-outline-secondary rounded-pill px-3">Action Shots</button>
+                    <button class="btn btn-sm btn-outline-secondary rounded-pill px-3">Equipment</button>
+                    <button class="btn btn-sm btn-outline-secondary rounded-pill px-3">Stadiums</button>
+                    <button class="btn btn-sm btn-outline-secondary rounded-pill px-3">Players</button>
+                    <button class="btn btn-sm btn-outline-secondary rounded-pill px-3">Vintage</button>
+                    <button class="btn btn-sm btn-outline-secondary rounded-pill px-3">Digital Art</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Gallery Section -->
+    <main id="gallery" class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Featured Collection</h2>
+            <div class="title-underline mx-auto"></div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+            <!-- Image Card 1 -->
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden image-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/3451.jpg" data-img-title="Baseball Asset #3451">
+                    <div class="card-img-wrapper">
+                        <img src="images/3451.jpg" class="card-img-top" alt="Baseball Asset">
+                        <div class="img-overlay d-flex flex-column justify-content-between p-3">
+                            <div class="text-end">
+                                <button class="btn btn-light btn-sm rounded-circle shadow-sm action-btn"><i class="bi bi-heart"></i></button>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-white text-dark shadow-sm">#3451</span>
+                                <button class="btn btn-primary btn-sm rounded-pill px-3 shadow-sm"><i class="bi bi-download me-1"></i> Get</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image Card 2 -->
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden image-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/Fotolia_2776142_M.jpg" data-img-title="Baseball Asset Fotolia M">
+                    <div class="card-img-wrapper">
+                        <img src="images/Fotolia_2776142_M.jpg" class="card-img-top" alt="Baseball Asset">
+                        <div class="img-overlay d-flex flex-column justify-content-between p-3">
+                            <div class="text-end">
+                                <button class="btn btn-light btn-sm rounded-circle shadow-sm action-btn"><i class="bi bi-heart"></i></button>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-white text-dark shadow-sm">Fotolia M</span>
+                                <button class="btn btn-primary btn-sm rounded-pill px-3 shadow-sm"><i class="bi bi-download me-1"></i> Get</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image Card 3 -->
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden image-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/_originWal_Baseball-4 (1).jpg" data-img-title="Baseball Asset #4">
+                    <div class="card-img-wrapper">
+                        <img src="images/_originWal_Baseball-4 (1).jpg" class="card-img-top" alt="Baseball Asset">
+                        <div class="img-overlay d-flex flex-column justify-content-between p-3">
+                            <div class="text-end">
+                                <button class="btn btn-light btn-sm rounded-circle shadow-sm action-btn"><i class="bi bi-heart"></i></button>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-white text-dark shadow-sm">Baseball-4</span>
+                                <button class="btn btn-primary btn-sm rounded-pill px-3 shadow-sm"><i class="bi bi-download me-1"></i> Get</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image Card 4 -->
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden image-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/_original_Baseball-10.jpg" data-img-title="Baseball Asset #10">
+                    <div class="card-img-wrapper">
+                        <img src="images/_original_Baseball-10.jpg" class="card-img-top" alt="Baseball Asset">
+                        <div class="img-overlay d-flex flex-column justify-content-between p-3">
+                            <div class="text-end">
+                                <button class="btn btn-light btn-sm rounded-circle shadow-sm action-btn"><i class="bi bi-heart"></i></button>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-white text-dark shadow-sm">Baseball-10</span>
+                                <button class="btn btn-primary btn-sm rounded-pill px-3 shadow-sm"><i class="bi bi-download me-1"></i> Get</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image Card 5 -->
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden image-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/_original_Baseball-110.jpg" data-img-title="Baseball Asset #110">
+                    <div class="card-img-wrapper">
+                        <img src="images/_original_Baseball-110.jpg" class="card-img-top" alt="Baseball Asset">
+                        <div class="img-overlay d-flex flex-column justify-content-between p-3">
+                            <div class="text-end">
+                                <button class="btn btn-light btn-sm rounded-circle shadow-sm action-btn"><i class="bi bi-heart"></i></button>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-white text-dark shadow-sm">Baseball-110</span>
+                                <button class="btn btn-primary btn-sm rounded-pill px-3 shadow-sm"><i class="bi bi-download me-1"></i> Get</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image Card 6 -->
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden image-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/_original_Baseball-12.jpg" data-img-title="Baseball Asset #12">
+                    <div class="card-img-wrapper">
+                        <img src="images/_original_Baseball-12.jpg" class="card-img-top" alt="Baseball Asset">
+                        <div class="img-overlay d-flex flex-column justify-content-between p-3">
+                            <div class="text-end">
+                                <button class="btn btn-light btn-sm rounded-circle shadow-sm action-btn"><i class="bi bi-heart"></i></button>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-white text-dark shadow-sm">Baseball-12</span>
+                                <button class="btn btn-primary btn-sm rounded-pill px-3 shadow-sm"><i class="bi bi-download me-1"></i> Get</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image Card 7 -->
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden image-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/_original_Baseball-6.jpg" data-img-title="Baseball Asset #6">
+                    <div class="card-img-wrapper">
+                        <img src="images/_original_Baseball-6.jpg" class="card-img-top" alt="Baseball Asset">
+                        <div class="img-overlay d-flex flex-column justify-content-between p-3">
+                            <div class="text-end">
+                                <button class="btn btn-light btn-sm rounded-circle shadow-sm action-btn"><i class="bi bi-heart"></i></button>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-white text-dark shadow-sm">Baseball-6</span>
+                                <button class="btn btn-primary btn-sm rounded-pill px-3 shadow-sm"><i class="bi bi-download me-1"></i> Get</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image Card 8 -->
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden image-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/_original_Baseball-7 (1).jpg" data-img-title="Baseball Asset #7">
+                    <div class="card-img-wrapper">
+                        <img src="images/_original_Baseball-7 (1).jpg" class="card-img-top" alt="Baseball Asset">
+                        <div class="img-overlay d-flex flex-column justify-content-between p-3">
+                            <div class="text-end">
+                                <button class="btn btn-light btn-sm rounded-circle shadow-sm action-btn"><i class="bi bi-heart"></i></button>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-white text-dark shadow-sm">Baseball-7</span>
+                                <button class="btn btn-primary btn-sm rounded-pill px-3 shadow-sm"><i class="bi bi-download me-1"></i> Get</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image Card 9 -->
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden image-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/_original_Baseball-8.jpg" data-img-title="Baseball Asset #8">
+                    <div class="card-img-wrapper">
+                        <img src="images/_original_Baseball-8.jpg" class="card-img-top" alt="Baseball Asset">
+                        <div class="img-overlay d-flex flex-column justify-content-between p-3">
+                            <div class="text-end">
+                                <button class="btn btn-light btn-sm rounded-circle shadow-sm action-btn"><i class="bi bi-heart"></i></button>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-white text-dark shadow-sm">Baseball-8</span>
+                                <button class="btn btn-primary btn-sm rounded-pill px-3 shadow-sm"><i class="bi bi-download me-1"></i> Get</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image Card 10 -->
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden image-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/_original_Baseball-4.jpg" data-img-title="Baseball Asset #4">
+                    <div class="card-img-wrapper">
+                        <img src="images/_original_Baseball-4.jpg" class="card-img-top" alt="Baseball Asset">
+                        <div class="img-overlay d-flex flex-column justify-content-between p-3">
+                            <div class="text-end">
+                                <button class="btn btn-light btn-sm rounded-circle shadow-sm action-btn"><i class="bi bi-heart"></i></button>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-white text-dark shadow-sm">Baseball-4</span>
+                                <button class="btn btn-primary btn-sm rounded-pill px-3 shadow-sm"><i class="bi bi-download me-1"></i> Get</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image Card 11 -->
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden image-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/_original_Baseball-9.jpg" data-img-title="Baseball Asset #9">
+                    <div class="card-img-wrapper">
+                        <img src="images/_original_Baseball-9.jpg" class="card-img-top" alt="Baseball Asset">
+                        <div class="img-overlay d-flex flex-column justify-content-between p-3">
+                            <div class="text-end">
+                                <button class="btn btn-light btn-sm rounded-circle shadow-sm action-btn"><i class="bi bi-heart"></i></button>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-white text-dark shadow-sm">Baseball-9</span>
+                                <button class="btn btn-primary btn-sm rounded-pill px-3 shadow-sm"><i class="bi bi-download me-1"></i> Get</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modern Footer -->
+    <footer class="footer py-5 mt-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Branding and Description -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand mb-4">
+                        <span class="fw-bold h4"><span class="text-primary">BASEBALL</span>GALLERY</span>
+                    </div>
+                    <p class="text-muted pe-lg-5">A premium collection of high-resolution baseball-themed imagery. Empowering creators with high-quality visual assets since 2026.</p>
+                    <div class="social-links d-flex gap-3 mt-4">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!-- Explore Links -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="fw-bold mb-4 text-uppercase tracking-wider small">Explore</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Latest Images</a></li>
+                        <li><a href="#gallery">Popular Collection</a></li>
+                        <li><a href="#">Premium Assets</a></li>
+                        <li><a href="#">Category List</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Links -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="fw-bold mb-4 text-uppercase tracking-wider small">Company</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Info</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Section -->
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="fw-bold mb-4 text-uppercase tracking-wider small">Stay Updated</h6>
+                    <p class="text-muted small mb-4">Subscribe to get notified about new additions and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control border-0 shadow-none bg-light" placeholder="Your email address" required>
+                            <button class="btn btn-primary px-4" type="submit">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="footer-divider my-5">
+
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-muted small mb-0">&copy; 2026 Baseball Gallery. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <p class="text-muted small mb-0">Inspired by <span class="fw-semibold">Fotolia</span> design language.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Preview Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content border-0 overflow-hidden rounded-4">
+                <div class="modal-body p-0">
+                    <div class="row g-0">
+                        <div class="col-lg-8 bg-black d-flex align-items-center justify-content-center">
+                            <img src="" id="modalImage" class="img-fluid" alt="Preview">
+                        </div>
+                        <div class="col-lg-4 p-4 d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-start mb-4">
+                                <h4 id="modalTitle" class="fw-bold mb-0">Image Title</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h6 class="text-uppercase small fw-bold text-muted mb-3">Asset Details</h6>
+                                <div class="d-flex gap-2 mb-2">
+                                    <span class="badge bg-light text-dark border">4K Ultra HD</span>
+                                    <span class="badge bg-light text-dark border">Royalty Free</span>
+                                </div>
+                                <p class="text-muted small">High-resolution baseball photography captured with professional equipment. Perfect for commercial and personal use.</p>
+                            </div>
+
+                            <div class="mt-auto">
+                                <button class="btn btn-primary btn-lg w-100 rounded-pill mb-3">
+                                    <i class="bi bi-download me-2"></i>Download Asset
+                                </button>
+                                <button class="btn btn-outline-secondary w-100 rounded-pill">
+                                    <i class="bi bi-share me-2"></i>Share Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script for Modal Functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const imageModal = document.getElementById('imageModal');
+            imageModal.addEventListener('show.bs.modal', function(event) {
+                const button = event.relatedTarget;
+                const imgSrc = button.getAttribute('data-img-src');
+                const imgTitle = button.getAttribute('data-img-title');
+                
+                const modalImage = document.getElementById('modalImage');
+                const modalTitle = document.getElementById('modalTitle');
+                
+                modalImage.src = imgSrc;
+                modalTitle.textContent = imgTitle;
+            });
+        });
+    </script>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
